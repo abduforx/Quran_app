@@ -1,6 +1,6 @@
 ### Quran App
 
-Managing Quran School in GMS
+Managaing Quarn School in GMS.
 
 ### Installation
 

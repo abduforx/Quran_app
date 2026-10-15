@@ -3,7 +3,7 @@ name = "quran_app"
 authors = [
     { name = "RFD TechHouse", email = "a.nada@rfdtechhouse.com"}
 ]
-description = "Managing Quran School in GMS"
+description = "Managaing Quarn School in GMS."
 requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]

@@ -1,7 +1,7 @@
 app_name = "quran_app"
 app_title = "Quran App"
 app_publisher = "RFD TechHouse"
-app_description = "Managing Quran School in GMS"
+app_description = "Managaing Quarn School in GMS."
 app_email = "a.nada@rfdtechhouse.com"
 app_license = "mit"
 
