@@ -1,0 +1,84 @@
+{
+ "app": "quran_app",
+ "charts": [],
+ "content": "[{\"id\":\"XGIeNx4loF\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0645\u0633\u0627\u062d\u0629 \u0639\u0645\u0644 \u0627\u0644\u0637\u0644\u0627\u0628 \u0648\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a</span>\",\"col\":12}},{\"id\":\"60YD2M8OZ1\",\"type\":\"paragraph\",\"data\":{\"text\":\"Click on \\n\\t\\t\\t\\n\\t\\t\\t\\n\\t\\t to edit\",\"col\":12}},{\"id\":\"Ex6ry6mak9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u0636\u0627\u0641\u0629 \u0637\u0627\u0644\u0628 \u062c\u062f\u064a\u062f\",\"col\":3}},{\"id\":\"eiOcg8-Qr8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u0636\u0627\u0641\u0629 \u0645\u062c\u0645\u0648\u0639\u0629 \u062c\u062f\u064a\u062f\u0629\",\"col\":3}},{\"id\":\"jl927QZS98\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u0636\u0627\u0641\u0629 \u0645\u0639\u0644\u0645 \u062c\u062f\u064a\u062f\",\"col\":3}},{\"id\":\"YJiRBO28g9\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0646\u0642\u0644 \u0648\u0627\u0644\u0643\u0634\u0648\u0641\u0627\u062a\",\"col\":4}}]",
+ "creation": "2026-10-23 15:32:06.160003",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0648\u0627\u0644\u0637\u0644\u0627\u0628",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0646\u0642\u0644 \u0648\u0627\u0644\u0643\u0634\u0648\u0641\u0627\u062a",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0642\u0644 \u0627\u0644\u0637\u0644\u0627\u0628",
+   "link_count": 0,
+   "link_to": "student-movement",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u0631\u0643\u0632 \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+   "link_count": 0,
+   "link_to": "print-center",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-10-24 10:09:10.414647",
+ "modified_by": "Administrator",
+ "module": "Quran App",
+ "name": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0648\u0627\u0644\u0637\u0644\u0627\u0628",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "\u0625\u0636\u0627\u0641\u0629 \u0637\u0627\u0644\u0628 \u062c\u062f\u064a\u062f",
+   "link_to": "Student",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "\u0625\u0636\u0627\u0641\u0629 \u0645\u062c\u0645\u0648\u0639\u0629 \u062c\u062f\u064a\u062f\u0629",
+   "link_to": "Student Group",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0625\u0636\u0627\u0641\u0629 \u0645\u0639\u0644\u0645 \u062c\u062f\u064a\u062f",
+   "link_to": "Instructor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0648\u0627\u0644\u0637\u0644\u0627\u0628",
+ "type": "Workspace"
+}

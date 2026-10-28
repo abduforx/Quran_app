@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2026-10-23 19:09:02.908501",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 1,
+ "modified": "2026-10-24 10:01:51.338843",
+ "modified_by": "Administrator",
+ "module": "Quran App",
+ "name": "print-center",
+ "owner": "Administrator",
+ "page_name": "print-center",
+ "roles": [
+  {
+   "role": "Quran Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "\u0645\u0631\u0643\u0632 \u0627\u0644\u0637\u0628\u0627\u0639\u0629"
+}

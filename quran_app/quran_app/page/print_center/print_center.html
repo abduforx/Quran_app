@@ -1,0 +1,91 @@
+<div class="container-fluid" style="margin-top: 15px; direction: rtl;">
+    <!-- التابين -->
+    <ul class="nav nav-tabs" id="printTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="groups-tab" href="#groups" style="cursor: pointer;">طباعة كشوفات المجموعات</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="financial-tab" href="#financial" style="cursor: pointer;">طباعة دفتر البيانات المالي</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="printTabsContent" style="margin-top: 15px;">
+        
+        <!-- التاب الأول: طباعة المجموعات -->
+        <div class="tab-pane fade show active" id="groups" role="tabpanel">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>ابحث عن المجموعة (بالاسم أو الكود):</label>
+                                <input type="text" id="search-group-input" class="form-control" placeholder="اكتب للبحث...">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="max-height: 400px; overflow-y: auto;">
+                        <table class="table table-bordered table-hover" id="groups-table">
+                            <thead>
+                                <tr>
+                                    <th>كود المجموعة</th>
+                                    <th>اسم المجموعة</th>
+                                    <th>المعلم</th>
+                                    <th>الإجراءات (طباعة)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="groups-list">
+                                <tr><td colspan="4" class="text-center text-muted">قم بالبحث لعرض المجموعات</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- التاب الثاني: طباعة الدفتر المالي -->
+        <div class="tab-pane fade" id="financial" role="tabpanel">
+            <div class="card">
+                <div class="card-body">
+                    
+                    <!-- الصف الأول: الفلاتر -->
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label>الفرع:</label>
+                            <select id="filter-branch" class="form-control">
+                                <option value="">كل الفروع</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>حالة الطالب:</label>
+                            <select id="filter-status" class="form-control">
+                                <option value="">الكل</option>
+                                <option value="موجود">موجود</option>
+                                <option value="مفصول">مفصول</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>نوع المجموعة:</label>
+                            <select id="filter-group-type" class="form-control">
+                                <option value="">الكل</option>
+                                <option value="المجموعات العادية فقط">المجموعات العادية</option>
+                                <option value="المجموعات الخاصة فقط">المجموعات الخاصة</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- الصف الثاني: الزرار في النص -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-primary btn-lg" id="btn-print-financial" style="padding: 10px 40px;">
+                                <i class="fa fa-print"></i> طباعة دفتر البيانات المالي
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

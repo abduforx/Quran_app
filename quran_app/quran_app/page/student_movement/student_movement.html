@@ -1,0 +1,115 @@
+<style>
+    .table th, .table td {
+        text-align: center !important;
+        vertical-align: middle !important;
+    }
+    
+    #available-students-list tr:hover, #selected-students-list tr:hover {
+        background-color: #f0f7ff !important;
+        transition: background-color 0.2s ease;
+    }
+    #available-students-list tr, #selected-students-list tr {
+        transition: background-color 0.2s ease;
+    }
+
+</style>
+
+
+<div class="container-fluid" style="margin-top: 15px; direction: rtl;">
+    <div class="row">
+        <!-- القسم الأول: الطلاب المتاحين والبحث -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">الطلاب المتاحين</h3>
+                </div>
+                <div class="card-body">
+                    <!-- خانات البحث -->
+                    <div class="form-group">
+                        <input type="text" id="search-student" class="form-control mb-2" placeholder="ابحث باسم الطالب أو الكود...">
+                        <input type="text" id="search-group" class="form-control" placeholder="ابحث باسم المجموعة أو كود المجموعة...">
+                    </div>
+                    <button class="btn btn-primary btn-sm mt-2" id="btn-search">بحث</button>
+                    
+                    <hr>
+                    <div id="group-indicator" class="mb-2"></div> <!-- عشان يظهر فيه اسم المجموعة -->
+                    <!-- جدول الطلاب المتاحين -->
+                    <div style="max-height: 400px; overflow-y: auto;">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th width="10%"><input type="checkbox" id="select-all-available"></th>
+                                    <th>كود الطالب</th>
+                                    <th>الاسم</th>
+                                    <th>المجموعة</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody id="available-students-list">
+                                <tr><td colspan="5" class="text-center text-muted">قم بالبحث لعرض الطلاب</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثاني: الطلاب المختارين والأوامر -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3 class="card-title">الطلاب المختارين (0)</h3>
+                </div>
+                <div class="card-body">
+                    <!-- أدوات التحكم -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>تغيير المجموعة إلى:</label>
+                            <select id="new-group-select" class="form-control">
+                                <option value="">-- اختر المجموعة --</option>
+                                <!-- سيتم ملؤها بالبيانات -->
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label>تغيير الحالة إلى:</label>
+                            <select id="new-status-select" class="form-control">
+                                <option value="">-- اختر الحالة --</option>
+                                <option value="موجود">موجود</option>
+                                <option value="مفصول">مفصول</option>
+                            </select>
+                            <div id="finance-checkbox-wrapper" style="display: none; margin-top: 10px;">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="chk-update-finance" checked> 
+                                    تحديث الرصيد المالي (احتساب اشتراك الفترة)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success mb-3" id="btn-apply-changes">تنفيذ التغييرات على الطلاب المختارين</button>
+                    
+                    <hr>
+
+                    <!-- جدول الطلاب المختارين -->
+                    <div style="max-height: 400px; overflow-y: auto;">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <button class="btn btn-danger btn-xs" id="btn-remove-all">إزالة الكل</button>
+
+                                    <th width="10%">إزالة</th>
+                                    <th>كود الطالب</th>
+                                    <th>الاسم</th>
+                                    <th>المجموعة</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody id="selected-students-list">
+                                <tr><td colspan="5" class="text-center text-muted">لم تقم باختيار أي طلاب</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,6 +5,36 @@ app_description = "Managaing Quarn School in GMS."
 app_email = "a.nada@rfdtechhouse.com"
 app_license = "mit"
 
+
+# التطبيقات اللي لازم تكون موجودة عشان تطبيقنا يشتغل
+required_apps = ["frappe", "erpnext", "education", "hrms"]
+
+# الملفات اللي بنسحبها من الداتابيز عشان تتنقل مع التطبيق
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Student", "Student Group", "Instructor", "Quran Receipt", "Quran Receipt Book"]]
+        ]
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "in", ["Student", "Student Group", "Instructor", "Quran Receipt", "Quran Receipt Book"]]
+        ]
+    },
+    "Client Script",
+    "Server Script",
+    "Print Format",
+    "Workspace",
+    "Role",
+    {
+        "dt": "Report",
+        "filters": [
+            ["is_standard", "=", "No"]
+        ]
+    }
+]
 # Apps
 # ------------------
 
