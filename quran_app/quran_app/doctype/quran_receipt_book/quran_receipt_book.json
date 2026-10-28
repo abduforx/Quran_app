@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "BOOK-#####",
+ "creation": "2026-10-15 14:02:05.463723",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_number",
+  "section_break_lpjg",
+  "status",
+  "start_receipt_no",
+  "column_break_iduf",
+  "total_receipts",
+  "remaining_receipts",
+  "column_break_hcxw",
+  "last_used_paper_receipt_number",
+  "total_collected_fees",
+  "column_break_kixx",
+  "notes",
+  "receipts_section",
+  "new_receipt",
+  "receipts_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Book Number"
+  },
+  {
+   "fieldname": "section_break_lpjg",
+   "fieldtype": "Section Break",
+   "label": "Book Details"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\u0645\u0641\u062a\u0648\u062d\n\u0645\u063a\u0644\u0642"
+  },
+  {
+   "description": "\u0627\u0643\u062a\u0628 \u0631\u0642\u0645 \u0623\u0648\u0644 \u0627\u064a\u0635\u0627\u0644 \u0641\u064a \u0627\u0644\u062f\u0641\u062a\u0631",
+   "fieldname": "start_receipt_no",
+   "fieldtype": "Int",
+   "label": "Start Receipt No.",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_iduf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "50",
+   "fieldname": "total_receipts",
+   "fieldtype": "Int",
+   "label": "Total Receipts",
+   "read_only": 1
+  },
+  {
+   "default": "50",
+   "fieldname": "remaining_receipts",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Remaining Receipts",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hcxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_used_paper_receipt_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Last Used Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_collected_fees",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Collected Fees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kixx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "receipts_section",
+   "fieldtype": "Section Break",
+   "label": "Receipts Register"
+  },
+  {
+   "fieldname": "new_receipt",
+   "fieldtype": "Button",
+   "label": "\u0625\u062f\u062e\u0627\u0644 \u0625\u064a\u0635\u0627\u0644"
+  },
+  {
+   "fieldname": "receipts_html",
+   "fieldtype": "HTML",
+   "label": "Receipts Display"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-28 10:47:21.720097",
+ "modified_by": "Administrator",
+ "module": "Quran App",
+ "name": "Quran Receipt Book",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
